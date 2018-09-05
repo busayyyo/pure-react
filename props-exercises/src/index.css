@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+}
+.container {
+  background-color: lightgrey;
+  height: 100px;
+  padding: 20px 50px;
+}
+
+.name, .city, .street {
+  margin-bottom: 10px;
+}
