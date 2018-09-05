@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+}
+.container {
+  border: 1px solid grey;
+  width: 50vw;
+  margin: 50px auto;
+  height: 400px;
+  padding: 20px 50px;
+  position: relative;
+}
+
+.name, .city, .street {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.receiver {
+  position: relative;
+  top: 120px;
+  left: 250px;
+}
+
+.stamp-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 70px;
+  height: 100px;
+  border: 1px solid grey;
+  padding: 20px;
+
+}
+
+.stamp {
+  font-size: 24px;
+  color: grey;
+  margin-top: 30%;
+  transform:rotate(-30deg);
+}
