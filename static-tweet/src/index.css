@@ -1,11 +1,23 @@
-.tweet {
+.container {
   border: 1px solid #ccc;
-  width: 564px;
-  min-height: 68px;
+  width: 35%;
+  margin: 20px auto;
   padding: 10px;
-  display: flex;
   font-family: "Helvetica", arial, sans-serif; font-size: 14px;
   line-height: 18px;
+}
+.tweet-wrapper {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+.content {
+  display: flex;
+}
+
+.tweet-top {
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .avatar {
@@ -34,12 +46,23 @@
   padding-right: 0.3em;
 }
 .buttons {
-  margin-top: 10px;
-  margin-left: 2px;
+  margin-top: -20px;
+  margin-left: 110px;
   font-size: 1.4em;
   color: #aab8c2;
+
 }
 
 .buttons i {
   width: 80px;
 }
+
+
+.count {
+  margin-left: 5px;
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 14px;
+}
+
+
+

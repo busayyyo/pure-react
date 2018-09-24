@@ -1,77 +1,71 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import PropTypes from 'prop-types'
+import TweetWrapper from './tweetWrapper';
 
-function Tweet() {
+const Tweet = ( { tweets }) => {
     return (
 
-        <div className="tweet">
-            <Avatar />
-            <div className="content">
-                <NameWithHandle />
-                <Time />
-                <Message />
-
-                <div className="buttons">
-                <ReplyButton />
-                <RetweetButton />
-                <LikeButton />
-                <MoreOptionsButton />
-                </div>
-            </div>
+        <div className="container">
+                {tweets.map(tweet => (
+                <TweetWrapper key={tweet.id} tweet={tweet}/>
+                ))}
         </div>
 
     );
+};
+
+Tweet.propTypes = {
+    tweets: PropTypes.array
 }
 
-function Avatar() {
-    return (
-        <img
+const tweetObject = [
+    {
+        id: 1,
+        name: 'Adesuwa Y.',
+        handle: 'ade_suwa',
+        time: '2018-09-23 21:28:00',
+        tweetMessage: 'You wont believe what happened today',
+        likes: 5,
+        retweet: 2,
+    },
+    {
+        id: 2,
+        name: 'Bolanle T.',
+        handle: 'bola_t',
+        time: '2018-09-23 21:24:00',
+        tweetMessage: 'Today is a good day',
+        likes: 15,
+        retweet: 12,
+    },
+    {
+        id: 3,
+        name: 'April J.',
+        handle: 'april_love',
+        time: '2018-09-23 19:24:00',
+        tweetMessage: 'James Baldwin once said...',
+        likes: 3,
+        retweet: 10,
+    },
+    {
+        id: 4,
+        name: 'James E.',
+        handle: 'jamey_boy',
+        time: '2018-09-23 21:24:00',
+        tweetMessage: `Can't wait for friday`,
+        likes: 0,
+        retweet: 2,
+    }
 
-            src="https://www.gravatar.com/avatar/nothing"
-            className="Avatar"
-            alt="avatar"
+]
 
-        />
-    );
-}
 
-function Message() {
-    return (
-        <div className="message">
-            This is less than 140 characters
-        </div>
-    );
-}
 
-function NameWithHandle() {
-    return (
-        <span className="name-with-handle">
-            <span className="name">Your Name</span>
-            <span className="handle">@yourhandle</span>
-        </span>
-    );
-}
 
-const Time = () => (
-    <span className="time">3h ago</span>
-);
 
-const ReplyButton = () => (
-    <i className="fa fa-reply reply-button"/>
-);
 
-const RetweetButton = () => (
-    <i className="fa fa-retweet retweet-button"/>
-);
 
-const LikeButton = () => (
-    <i className="fa fa-heart like-button"/>
-);
 
-const MoreOptionsButton = () => (
-    <i className="fa fa-ellipsis-h more-options-button"/>
-);
-
-ReactDOM.render(<Tweet />, document.getElementById('root'));
+ReactDOM.render(<Tweet tweets={tweetObject}/>, document.getElementById('root'));
 
