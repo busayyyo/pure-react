@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 50%;
+  margin: 10px auto;
+  padding: 20px;
+}
+.header {
+  display: flex;
+  padding: 10px;
+  background-color: orangered;
+}
+
+.source, .fa-caret-up, .number {
+  color: #5e5e5e;
+}
+.headline {
+  padding: 10px;
+}
+
+.heading {
+  color: #333333;
+  font-size: 18px;
+}
+.news-board {
+  background-color: #eae7e7;
+  padding: 5px;
+}
+
+.reactions {
+  color: #5e5e5e;
+  margin-left: 40px;
+  font-size: 13px;
+}
+
+.statement {
+  padding-right: 3px;
+}
+
+.hide, .flag, .save-to-pocket, .insta-paper, .comment {
+  border-left: 2px solid;
+  margin-right: 2px;
+  padding: 0 5px;
+}
+nav {
+  padding-top: 7px;
+  padding-left: 3px;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 0 8px;
+  border-right: 2px solid black;
+}
+
+
