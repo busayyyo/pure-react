@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.trello-board {
+  display: flex;
+  justify-content: space-around;
+  color: #333;
+}
+.task-board {
+  width: 300px;
+  margin-top: 30px;
+  border: 2px solid deepskyblue;
+  background-color: #eae7e7;
+  padding: 20px;
+}
+
+.task-header {
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.fa {
+  font-weight: lighter;
+  font-size: 12px;
+  color: grey;
+}
+.task-list {
+  width: 260px;
+  margin: 8px auto;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.header{
+  margin-right: auto;
+  margin-left: 8px;
+}
+
+.input-task {
+  border: none;
+  background: transparent;
+  font-size: 17px;
+  margin-left: 8px;
+  margin-top: 8px;
+}
